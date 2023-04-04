@@ -110,7 +110,7 @@ publishing {
                 username "$nexusUsername"
                 password "$nexusPassword"
             }
-            url = version.endsWith('SNAPSHOT') ? "$nexusRelease" : "$nexusSnapshot"
+            url = version.endsWith('SNAPSHOT') ? "$nexusSnapshot" : "$nexusRelease"
             allowInsecureProtocol = !url.toString().startsWith("https://")
         }
     }
